@@ -5,14 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      
     <title>Portfolio</title>
+    <!-- external Css -->
     <link rel="stylesheet" href="style.css" >
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <!-- NavBar -->
-    <nav class="navbar navbar-expand-lg navbar-dark position-fixed top-0 w-100  z-5">
-        <div class="container-fluid">
-          <a class="navbar-brand ms-lg-5" href="#">Portfolio</a>
+    <nav class="navbar navbar-expand-lg navbar-dark position-fixed z-3 top-0 w-100 " style="margin-top: -8px;" >
+        <div class="container-fluid" style="background: linear-gradient(to right, #2C5364, #203A43, #0F2027);">
+          <a class="navbar-brand ms-lg-5 m-3 "  href="#home">Portfolio</a>
           <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -25,22 +31,22 @@
             <div class="offcanvas-body text-white  ">
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-5 m-3">
                 <li class="nav-item ms-lg-4 mt-2">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  <a class="nav-link active" aria-current="page" href="#home">Home</a>
                 </li>
                 <li class="nav-item ms-lg-4 mt-2">
-                  <a class="nav-link" href="#">About us</a>
+                  <a class="nav-link" href="#about">About us</a>
                 </li>
                 <li class="nav-item ms-lg-4 mt-2">
-                  <a class="nav-link" href="#">Skill</a>
+                  <a class="nav-link" href="#skill">Skill</a>
                 </li>
                 <li class="nav-item ms-lg-4 mt-2" >
-                  <a class="nav-link" href="#">Qualifications</a>
+                  <a class="nav-link" href="#qualification">Qualifications</a>
                 </li>
                 <li class="nav-item ms-lg-4 mt-2">
-                  <a class="nav-link" href="#">Certification</a>
+                  <a class="nav-link" href="#certificate">Certification</a>
                 </li>
                 <li class="nav-item ms-lg-4 mt-2">
-                  <a class="nav-link" href="#">Contact</a>
+                  <a class="nav-link" href="#contact">Contact</a>
                 </li>
                
               </ul>
@@ -54,36 +60,218 @@
 
       <!-- Hero Section -->
       
-        <div class="row mt-5" style="height: 550px;">
-          <div class="col-lg-6 d-flex justify-content-center align-items-center text-white mt-5 mt-lg-0">
+        <div class="row" id="home" style="margin-top: 80px;" >
+          <div class="col-lg-6 d-flex justify-content-center align-items-center  text-white " data-aos="zoom-in" data-aos-delay="200"  >
            <div><h4 class=" fs-1" style="margin-bottom: -20px; color:red;">I'M</h4><br>
-          <h4  class=" fs-1" style="color: #64ABC6;">BHUVANESHWARAN</h4>
-          <p  class=" fs-4" style="color: #64ABC6;">Full Stack Developer </p>
-          <p  class=" fs-4" style="color: #64ABC6;  margin-top: -10px;">I'm Fresher </p>
-          <a class="btn bg-primary p-3 rounded-4 text-white" href="#">Read More</a>
+          <h4  class=" fs-1" style="color: #64ABC6;">BHUVANESHWARAN</h4><br>
+          <p  class=" fs-4" style="color: #64ABC6;  margin-top: -10px;">I'm <span id="type"></span></p>
+          <a class="btn btn-outline-secondary p-2 rounded-3 text-white" href="#about">Read More</a>
+          <a class="btn btn-outline-primary p-2 ms-3 rounded-3 text-white " href="img/Bhuvanesh Resume.pdf" download=" Bhuvaneshwaran Resume">CV download</a>
           </div>            
 
           </div>
-          <div class="col-lg-6  d-flex justify-content-center align-items-center ">
+          <div class="col-lg-6 d-flex justify-content-center align-items-center "  data-aos="zoom-in" data-aos-delay="800"  >
             <img class="w-75 h-75" src="img/myimage.jpg" style="border-radius: 80%;" >
           </div>
     
 <!-- Hero End -->
+
+<!-- About -->
 <section>
-  <div class="col text-center mt-lg-5 mt-md-5 mt-sm-5 overflow-hidden " id="about" data-aos="zoom-in">
+  <div class="col text-center mt-lg-5 mt-md-5 mt-sm-5 overflow-hidden " id="about" data-aos="zoom-in"  >
     <span class="fs-1 text-secondary fw-bold ">ABOUT_US </span>
   </div>
-
-  <div class="row">
-    <div class="col-lg-12">
-      <p class="text-white text-center"> * I am an enthusiastic, self-motivated, reliable, responsible and hard working person. I am a mature team worker and adaptable to all challenging situations.<br> 
-        <br>* I am able to work well both in a team environment as well as using own initiative. I am able to work well under pressure and adhere to strict deadlines.<br><br></p>
-
+    <div class=" row container-fluid h-75 mt-5 mb-5  ">
+    <div class="col-lg-12 fs-5 bg-white mt-5  h-100" data-aos="fade-up" data-aos-delay="500"  >
+      <p class="text-black text-center mt-5 " style="word-spacing: 5px ;line-height: 40px;">>> I am an enthusiastic, self-motivated, reliable, responsible and hard working person. I am a mature team worker and adaptable to all challenging situations.<br> 
+        </p>
+       
+         <p class="text-black text-center mt-5"style="word-spacing: 5px ;line-height: 40px;">>>  I had completed MCA degree in Jamal Mohamed College with 82 percentage.Now i am looking a job for full stack web development.</p>
+          <p class="text-black text-center mt-5 mb-5 " style="word-spacing: 5px ;line-height: 50px;">   
+            >>  I had done two project in my under graduate.
+             Title-1. Hotel Management Booking using HTML,CSS,JavaScript,SQL. Title-2 Student Management System Using NetBeans,java,SQL.</p>
     </div>
+  </div>
 
+</section>
+
+<!-- About end -->
+<!-- Skills  -->
+<section id="skill" class="mt-5">
+  
+  <div class="col text-center mt-lg-5 mt-md-5 mt-sm-5 overflow-hidden mb-5" id="about" data-aos="zoom-in">
+    <span class="fs-1 text-secondary fw-bold ">SKILLS </span>
+  </div>
+  <div class="row d-flex justify-content-center align-items-center"  data-aos="fade-up" data-aos-delay="500">
+    <div class="col-lg-5 col-10 mt-5">
+        <h1 class="text-white fs-4">HTML:</h1>
+      <div class="progress rounded-4" role="progressbar" aria-label="Example with label" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="height: 25PX;">
+        <div class="progress-bar" style="width:100% ;font-size: 16PX;">100%</div>
+      </div>
+  
+  </div>
+  <div class="col-lg-5 col-10 ms-lg-5 mt-5 ">
+  
+      <h1 class="text-white fs-4">CSS:</h1>
+    <div class="progress rounded-4" role="progressbar" aria-label="Example with label" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="height: 25PX;">
+      <div class="progress-bar" style="width:90%; font-size: 16PX;">90%</div>
+    </div>
+  </div>
+  
+<div class="col-lg-5 col-10 mt-5">
+ 
+    <h1 class="text-white fs-4">JAVASCRIPT:</h1>
+  <div class="progress rounded-4" role="progressbar" aria-label="Example with label" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="height: 25PX;">
+    <div class="progress-bar" style="width:80%; font-size: 16PX;">80%</div>
+  </div>
+</div>
+
+<div class="col-lg-5 col-10 ms-lg-5 mt-5">
+ 
+    <h1 class="text-white fs-4">PYTHON:</h1>
+  <div class="progress rounded-4" role="progressbar" aria-label="Example with label" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="height: 25PX;">
+    <div class="progress-bar" style="width:85%; font-size: 16PX;">85%</div>
+  </div>
+</div>
+
+<div class="col-lg-5 col-10 mt-5 mb-5">
+    <h1 class="text-white fs-4">MYSQL:</h1>
+  <div class="progress rounded-4 " role="progressbar" aria-label="Example with label" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="height: 25PX;">
+    <div class="progress-bar" style="width:80% ; font-size: 16PX; ">80%</div> 
+</div>
+</div>
   </div>
 </section>
+<!-- skills End -->
+
+<!-- Qualification -->
+<section id="qualification">
+<div class="col text-center mt-lg-5 mt-md-5 mt-sm-5 overflow-hidden mb-5" id="about" data-aos="zoom-in">
+  <span class="fs-1 text-secondary fw-bold ">QUALIFICATION </span>
+</div>
+<div class="row">
+  <div class="col-lg-5 col-10 ms-auto me-auto  bg-white rounded-4 card" style="box-shadow: 10px 5px 5px  black; line-height: 50px; height: 400px;" data-aos="fade-up" data-aos-delay="200">
+    <h1 class="fs-1 text-center fw-bold mb-5 mt-3 text-decoration-underline" style="color: #0a4e56;">SSLC</h1>
+    <p class=" mb-5 lh-lg  mb-5" style="font-size: 21px; color: #5a5f12; font-weight: 500 ;text-align: center;">>> I had comleted 10th in Raj Vidhyalaya Bhavan Matric.Hr.Sec.School Thuraiyur Trichy.<br><br>
+      >> I scored 460 marks with 92 percentage.SSLC Done in MARCH 2017.</p>
+
+  </div>
+  <<div class="col-lg-5 col-10 ms-auto me-auto mt-5 mt-lg-0 bg-white   rounded-4 card " style=" box-shadow: 10px 5px 5px  black; line-height: 50px;  height: 400px;"data-aos="fade-up" data-aos-delay="300">
+    <h1 class="fs-1 text-center fw-bold mb-5 mt-3 text-decoration-underline" style="color: #0a4e56;">HSC</h1>
+    <p class=" mb-5 lh-lg " style="font-size: 21px; color: #5a5f12; font-weight: 500 ;text-align: center;">>>  I had comleted 12th in Sri Balaji Vidhyalaya Matric.Hr.Sec.School Thuraiyur Trichy.<br><br>
+      >> I scored 466 marks with 78 percentage.HSC Done in MARCH 2019.</p>
+
+  </div>
+  <<div class="col-lg-5 col-10 ms-auto me-auto mt-5 bg-white  rounded-4 card " style=" box-shadow: 10px 5px 5px  black;  line-height: 50px;  height: 400px;"data-aos="fade-up" data-aos-delay="500">
+    <h1 class="fs-1 text-center fw-bold mb-5 mt-3 text-decoration-underline" style="color: #0a4e56;">BCA</h1>
+    <p class=" mb-5 lh-lg " style="font-size: 21px; color: #5a5f12; font-weight: 500 ;text-align: center;">>>  I had comleted my under graduate BCA in Jamal Mohamed College Trichy.<br><br>
+      >> I scored 89 percentage in BCA, course duration 2019-2022.<br>
+    >> Bharathidasan University</p>
+
+  </div>
+  <<div class="col-lg-5 col-10 ms-auto me-auto mt-5 mb-5 bg-white rounded-4 card " style=" box-shadow: 10px 5px 5px  black; line-height: 50px; color: #203A43; height: 400px;"data-aos="fade-up" data-aos-delay="600">
+    <h1 class="fs-1 text-center fw-bold mb-5 mt-3 text-decoration-underline" style="color: #0a4e56;">MCA</h1>
+    <p class=" mb-5 lh-lg " style="font-size: 21px; color: #5a5f12; font-weight: 500 ;text-align: center;">>>  I had comleted my post graduate MCA in Jamal Mohamed College Trichy.<br><br>
+      >> I scored 82 percentage in MCA, course duration 2022-2024.<br>
+      >> Bharathidasan University</p>
+
+  </div>
+</div>
+</section>
+
+<!-- Qualification End -->
+
+<!-- Certificate -->
+<section id="certificate">
+  <div class="col text-center mt-lg-5 mt-md-5 mt-sm-5 overflow-hidden " id="about" data-aos="zoom-in">
+    <span class="fs-1 text-secondary fw-bold ">CERTIFICATE </span>
+  </div>
+  <div class="row mt-5">
+    <div class="col-lg-5 col-10 bg-white mt-5 ms-auto me-auto text-center h-100 rounded-4" style="box-shadow: 5px 15px 15px rgb(33, 111, 129);"   data-aos="fade-up" data-aos-delay="200">
+      <p class="mt-5" style="font-size: 20px; color: #203A43;"> >> I had completed three month course in C and C++. <br> >> The institute name Ssi Computer Education in Thuraiyur.</p>
+      <img src="img/c_certi.jpg" class="w-75 h-75 img-fluid mt-5 mb-5">
+
+    </div>
+    <div class="col-lg-5 col-10 bg-white mt-5 ms-auto me-auto text-center h-100 rounded-4"  style="box-shadow: 5px 15px 15px rgb(33, 111, 129);" data-aos="fade-up" data-aos-delay="400" >
+      <p class="mt-5" style="font-size: 20px; color: #203A43;">>> I had completed oracle APEX cloud computing certified professional in online.</p>
+      <img src="img/oracle_certi.jpg" class="w-75 h-75 img-fluid mt-5 mb-5">
+
+    </div>
+  </div>
+
+  <!-- End Certificate -->
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="col text-center mt-lg-5 mt-md-5 mt-sm-5 overflow-hidden mb-5 mt-5" id="about" data-aos="zoom-in">
+      <span class="fs-1 text-secondary fw-bold ">CONTACT </span>
+    </div>
+    <div class="row" data-aos="fade-up" data-aos-delay="500">   
+      <div class="col-lg-4 d-flex justify-content-center align-items-center ms-lg-5">
+        <ul class="list-unstyled text-white fs-5 ms-5 ">
+          <li><i class="fa-solid fa-phone"></i> Phone No : 9789622393</li><br>
+          <li> <i class="fa-solid fa-envelope"></i> Email : bhuvanesh.k2001@gmail.com</li><br>
+          <li> <i class="fa-solid fa-house"></i> Address : 1424,Dhevanga Nagar CSI School Back Side,Thuraiyur,Trichy,621010</li><br>
+          <li>
+            <a href="https://www.facebook.com/profile.php?id=100016164279026" target="_blank" class="mt-lg-5 text-white ms-5"><i class="fa-brands fa-facebook "></i></a>
+            <a href="https://twitter.com/Bhuvane94876246" target="_blank" class="mt-lg-5 text-white ms-5 "><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://github.com/dashboard" target="_blank" class="mt-lg-5 text-white ms-5"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/bhuvaneshwaran1516/" target="_blank" class="mt-lg-5 text-white ms-5"><i class="fa-brands fa-linkedin"></i></a>
+          </li>
+        </ul>
+
+      </div>
+      <div class="col-lg-7 mt-5">
+        <form>
+          <div class="row ">
+            <div class="d-flex justify-content-center align-items-center">
+            <div class="col-6">
+              <input type="text" placeholder="Your Name" class="form-control p-3 ">
+            </div>
+            <div class="col-6">
+              <input type="text" placeholder="Your Email" class="form-control p-3 ms-1">
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="text" placeholder="Subject" class="form-control p-3 mt-4">
+          </div>
+          <div class="form-group">
+            <textarea rows="5" placeholder="Messages" name="Messages " class="form-control mt-3">Messages</textarea>
+          </div>
+          <div class="text-center">
+           <button class="btn-primary btn rounded-3 mt-4 p-2 m-2 mb-5 ">Send Message</button>
+          </div>
+          </div>
+        </form>
+        
+    </div>
+
+
+
+
+<!-- Typed js cdn -->
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed('#type', {
+        strings: ['Developer!',' Python Full Stack Developer!','Freelancer!'],
+        typeSpeed: 100,
+        backSpeed: 100,
+        loop: true
+      });
+    </script>
+
+
       <!-- Bootstrap javascript -->
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</body>
+    <!-- Aos Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        easing: 'linear'
+      });
+    </script>
+    </body>
 </html>
