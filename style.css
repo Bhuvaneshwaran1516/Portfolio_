@@ -10,8 +10,127 @@ background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Ch
 background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
-.card:hover{
+.card:hover {
    transition: linear 2s;
     cursor: pointer;
+    box-shadow: 1px 1px 15px 0px rgba(48, 173, 98, 0.714);
+    color: #0F2027;
+    border-color: yellow;
 }
+.qlogo{
+    color: rgb(124, 125, 89);
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/* up to home arrow */
+#backToHomeBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 10px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: yellowgreen; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 12px; /* Some padding */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 15px; /* Increase font size */
+}
+
+#backToHomeBtn:hover {
+    background-color: #b0d85f; /* Add a dark-grey background on hover */
+}
+
+.bx{
+    color: rgb(174, 204, 106);
+}
+
+
+.whatsapp_float {
+    position: fixed;
+    display: none;
+    width: 50px;
+    height: 50px;
+    bottom: 80px;
+    right: 5px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+  }
+  .whatsapp-icon {
+    margin-top: 10px;
+  }
+
+  /* for mobile */
+  @media screen and (max-width: 767px){
+    .whatsapp-icon {
+      margin-top: 9px;
+      margin-left: 1px;
+    }
+    .whatsapp_float {
+      width: 40px;
+      height: 40px;
+      bottom: 80px;
+      right: 8px;
+      font-size: 22px;
+    }
+  }
+
+
+
+
+.scroll-down-arrow {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+
+.scroll-down-arrow span {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-bottom: 4px solid rgb(176, 172, 172);
+  border-right: 4px solid rgb(176, 172, 172);
+  transform: rotate(45deg);
+  margin: 1px;
+  animation: animateArrow 2s infinite;
+}
+
+.scroll-down-arrow span:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.scroll-down-arrow span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.scroll-down-arrow span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes animateArrow {
+  0% {
+      opacity: 0;
+      transform: rotate(45deg) translate(-20px, -20px);
+  }
+  50% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 0;
+      transform: rotate(45deg) translate(20px, 20px);
+  }
+}
+
+ 
 
