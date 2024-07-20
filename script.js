@@ -42,12 +42,3 @@ AOS.init({
   });
 
 
-// script.js
-// When the user clicks on the arrow, scroll to the next section
-document.querySelector('.scroll-down-arrow').addEventListener('click', function() {
-    window.scrollTo({
-        top: window.innerHeight,
-        behavior: 'smooth'
-    });
-});
-
