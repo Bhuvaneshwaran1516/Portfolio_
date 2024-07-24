@@ -35,7 +35,7 @@ AOS.init({
 //  Setup and start animation! 
 
   var typed = new Typed('#type', {
-    strings: ['Developer!',' Python Full Stack Developer!','Freelancer!'],
+    strings: ['Developer!',' Python FullStack Developer!','Freelancer!'],
     typeSpeed: 75,
     backSpeed: 50,
     loop: true
